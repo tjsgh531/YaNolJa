@@ -3,9 +3,9 @@
     <head>
         <title>Global R.E.S.T Platform</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width = device-width, initial-scale = 1.0, usal-scalable = no">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0, user-scalable = no">
         <link rel="stylesheet" href="./css/style.css">
-        <script src="./javaScript/main.js" defer></script>
+        <script type="module" src="./javaScript/main.js" defer></script>
         <link rel="shortcut icon" href="./yalogo.ico">
 
         <!-- font-family: 'Comfortaa', cursive; -->
@@ -14,19 +14,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <canvas class="background"></canvas>
+        <header class="header">
+            <div class="header_background"></div>
             <div class="title_logo">yanolja</div>
-            <div class="sub_btn_group">
-                <div class="sub_btn">About</div>
-                <div class="sub_btn">What We do</div>
-                <div class="sub_btn">Tech story</div>
-                <div class="sub_btn">Newsroom</div>
-                <div class="sub_btn">IR</div>
-                <div class="sub_btn">ESG</div>
-                <div class="sub_btn">Careers</div>
-            </div>
+            <nav class="nav">
+                <div class="nav_btn">About</div>
+                <div class="nav_btn">What We do
+                    <nav class="subnav hide">    
+                        <div class="subnav_btn">Platform business</div>
+                        <div class="subnav_btn">Hospitality solution</div>
+                        <div class="subnav_btn">Space business</div>
+                        <div class="subnav_btn">Partnership</div>
+                    </nav>
+                </div>
+                <div class="nav_btn">Tech story</div>
+                <div class="nav_btn">Newsroom</div>
+                <div class="nav_btn">IR
+                    <nav class="subnav hide">    
+                        <div class="subnav_btn">공시</div>
+                    </nav>
+                </div>
+                <div class="nav_btn">ESG
+                    <nav class="subnav hide">    
+                        <div class="subnav_btn">ESG vision</div>
+                        <div class="subnav_btn">ESG commitments</div>
+                        <div class="subnav_btn">ESG news</div>
+                    </nav>
+                </div>
+                <div class="nav_btn">Careers</div>
+            </nav>
             <div class="lang">
                 <div class="ko">KOR</div>
+                <div class="division">|</div>
                 <div class = "en">ENG</div>
             </div>
         </header>

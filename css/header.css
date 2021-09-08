@@ -1,5 +1,8 @@
-header{
+.header{
+    position: absolute;
+    top: 0; left: 0;
     width: 100%;
+    height: fit-content;
 
     box-sizing: border-box;
 
@@ -8,14 +11,22 @@ header{
     display: flex;
     flex-direction: row;
 
-    font-family:'Comfortaa', cursive;
-
+    font-family:'Comfortaa',sans-serif, cursive;
 }
+.header_background{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 0px;
+    box-sizing: border-box;
 
+    background-color: white;
+    transition: height 0.5s ease-in-out;
+}
 .title_logo{
-    border: dotted 1px red;
-    margin:0 54px;
-    margin-right: 120px;
+    position: relative;
+    top: 0;
+
+    margin:0 60px;
 
     font-size: 24px;
     font-weight: 900;
@@ -23,24 +34,34 @@ header{
 
     cursor: pointer;
 }
-.sub_btn_group{
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding-right: 100px;    
 
+.nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+}
+
+.nav_btn{
+    position: relative;
+
+    margin-left: 24px;
+    padding: 0 30px;
+
+    font-size: 14px;
+    white-space: nowrap;
+    cursor: pointer;
 
 }
-.sub_btn{
-    
-    font-size: 14px;
-    cursor: pointer;
+.subnav{
+    position: absolute;
+    top: 20px;
+}
+.subnav_btn{
+    margin:16px 0;
+    white-space: nowrap;
 }
 .lang{
-    margin-right:50px;
-    margin-left: 100px;
+    position: absolute;
+    right: 100px;
 
     font-size: 14px;
     font-weight: 900;
@@ -48,6 +69,31 @@ header{
     display: flex;
     flex-direction: row;
 }
-.lang * {
-    width: 40px;;
+.lang .ko{
+    padding: 0 5px;
+}
+.lang .en{
+    padding: 0 5px;
+    color :rgb(100, 100, 100);
+}
+.lang .division{
+    color :rgb(100, 100, 100);
+    font-size: 1px;
+}
+
+.hide{
+    display: none;
+}
+.hidden{
+    visibility: hidden;
+}
+
+.background{
+    position: absolute;
+    top:0; left: 0;
+
+    width: 100%; height: 1080px;
+    box-sizing: border-box;
+
+    background-color: #eee;
 }
